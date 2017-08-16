@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="true" default-lazy="false">
+
+<class 
+    name="roseindia.dao.hibernate.Config" 
+    table="config"
+>
+
+
+      <id
+        name="id"
+        type="java.lang.Integer"
+        column="id"
+    >
+        <generator class="increment" />
+    </id>
+
+    
+        <property 
+            name="storename" 
+            column="storename" 
+            type="java.lang.String"
+            length="50"
+        />
+        <property 
+            name="storeurl" 
+            column="storeurl" 
+            type="java.lang.String"
+            length="50"
+        />
+        <property 
+            name="ordernoticeemail" 
+            column="ordernoticeemail" 
+            type="java.lang.String"
+            length="50"
+        />
+        <property 
+            name="cursymbol" 
+            column="cursymbol" 
+            type="java.lang.String"
+            length="6"
+        />
+        <property 
+            name="curcode" 
+            column="curcode" 
+            type="java.lang.String"
+            length="6"
+        />
+        
+        <property 
+            name="aboutustext" 
+            column="aboutustext" 
+            type="java.lang.String"
+            length="65535"
+        />
+        <property 
+            name="shipdeltext" 
+            column="shipdeltext" 
+            type="java.lang.String"
+            length="65535"
+        />
+   
+
+    <!-- Associations -->
+    <!-- derived association(s) for compound key -->
+    <!-- end of derived association(s) -->
+  
+
+</class>
+</hibernate-mapping>

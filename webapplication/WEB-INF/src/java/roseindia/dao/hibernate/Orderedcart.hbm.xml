@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="true" default-lazy="false">
+
+<class 
+    name="roseindia.dao.hibernate.Orderedcart" 
+    table="orderedcarts"
+>
+
+      
+    <id
+        name="orderid"
+        type="java.lang.Integer"
+        column="orderid"
+    >
+        <generator class="increment" />
+    </id>
+    
+    <property
+        name="productid"
+        type="java.lang.Integer"
+        column="productid"
+        length="11"
+    />
+
+    <property
+        name="name"
+        type="java.lang.String"
+        column="name"
+        length="255"
+    />
+    <property
+        name="price"
+        type="java.lang.Float"
+        column="price"
+        length="12"
+    />
+    <property
+        name="quantity"
+        type="java.lang.Integer"
+        column="quantity"
+        length="11"
+    />
+
+    <!-- Associations -->
+    <!-- derived association(s) for compound key -->
+    <!-- end of derived association(s) -->
+  
+
+</class>
+</hibernate-mapping>

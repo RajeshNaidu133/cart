@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="true" default-lazy="false">
+
+<class 
+    name="roseindia.dao.hibernate.Product" 
+    table="product"
+>
+
+    <id
+        name="productid"
+        type="java.lang.Integer"
+        column="productid"
+    >
+        <generator class="increment" />
+    </id>
+
+    <property
+        name="categoryid"
+        type="int"
+        column="categoryid"
+        not-null="true"
+        length="11"
+    />
+    <property
+        name="productname"
+        type="java.lang.String"
+        column="productname"
+        not-null="true"
+        length="60"
+    />
+    <property
+        name="productprice"
+        type="java.lang.String"
+        column="productprice"
+        not-null="true"
+        length="40"
+    />
+    <property
+        name="listprice"
+        type="java.lang.String"
+        column="listprice"
+        
+        length="20"
+    />
+    <property
+        name="imagename"
+        type="java.lang.String"
+        column="imagename"
+        
+        length="60"
+    />
+    <property
+        name="quantity"
+        type="java.lang.String"
+        column="quantity"
+        not-null="true"
+        length="11"
+    />
+    <property
+        name="description"
+        type="java.lang.String"
+        column="description"
+        
+        length="80"
+    />
+    <property
+        name="briefdisc"
+        type="java.lang.String"
+        column="briefdisc"
+        length="65535"
+    />
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

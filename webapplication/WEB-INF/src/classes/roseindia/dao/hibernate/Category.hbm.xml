@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="true" default-lazy="false">
+
+<class 
+    name="roseindia.dao.hibernate.Category" 
+    table="category"
+>
+
+    <id
+        name="categoryid"
+        type="java.lang.Integer"
+        column="categoryid"
+    >
+        <generator class="increment" />
+    </id>
+
+    <property
+        name="categoryname"
+        type="java.lang.String"
+        column="categoryname"
+        length="60"
+    />
+    <property
+        name="parentid"
+        type="int"
+        column="parentid"
+        not-null="true"
+        length="11"
+    />
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

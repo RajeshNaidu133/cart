@@ -1,0 +1,56 @@
+ 				 ============================================
+                		     steps to Run Rose India shopping cart
+                		 ============================================
+
+	Cart 1.1 requires :
+		JSE Runtime Environment (JRE) version 5.0 or later ,
+		Apache-tomcat-5.5.23 jsp/servlet Container and 
+		Mysql 4.1 or later versions
+
+	(1) Download and Install the JRE
+
+	(1.1) Download the Java Standard Edition Runtime Environment (JRE),
+      		release version 5.0 or later, from http://java.sun.com/j2se.
+
+	(1.2) Install the JRE according to the instructions included with the
+      		release.
+
+	(1.3) Set the environment variable i.e. JAVA_HOME to the pathname of
+      		the directory into which you installed the JRE, e.g. c:\jdk5.0
+      		or /usr/local/java/jdk5.0.
+
+
+	(2) Download and Install the Tomcat Binary Distribution.
+
+	(2.1) Download a binary distribution of Tomcat from:
+
+      		http://tomcat.apache.org
+
+	(2.2) Unpack the binary distribution into a convenient location so that 
+		the distribution resides in its own directory (conventionally 
+		named "apache-tomcat-[version]").  For the purposes of the remainder
+		of this document,the symbolic name "$CATALINA_HOME" is used to refer
+		to the full pathname of the release directory.
+
+	(3) Running the cart 1.1
+
+	(3.1)Unzip the cart1.1.zip file and copy webapplication folder in to your tomcat
+		webapps folder. Then rename webapplication into cart.
+
+	(3.2)open file "Database.sql" from cart directory and copy sql commands and run
+		them with your mysql database.
+
+	(3.2)Go in to the directory cart\WEB-INF and open file jdbc.properties
+		and change the values of jdbc.username and jdbc.password according
+		to your mysql database username and password and save it.
+
+	(3.3)Now start the tomcat and type the url http://localhost:8080/cart in
+		your browser and press "go" button ,you will see the home page of
+		your shopping cart application.
+
+	(3.4)for admin section type the url http://localhost:8080/cart/pages/admin
+		/adminlogin.jsp.For admin login use username=admin and password=password.
+
+ 
+
+

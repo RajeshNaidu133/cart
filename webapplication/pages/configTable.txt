@@ -1,0 +1,36 @@
+-- phpMyAdmin SQL Dump
+-- version 2.6.3-rc1
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Dec 13, 2006 at 12:55 PM
+-- Server version: 4.0.26
+-- PHP Version: 5.0.0
+-- 
+-- Database: `shopping_cart`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `config`
+-- 
+
+CREATE TABLE `config` (
+  `storename` varchar(50) NOT NULL default '',
+  `storeurl` varchar(50) NOT NULL default '',
+  `ordernoticeemail` varchar(50) NOT NULL default '',
+  `cursymbol` varchar(6) NOT NULL default '',
+  `curcode` varchar(6) NOT NULL default '',
+  `paypalemail` varchar(50) NOT NULL default '',
+  `paypalEnable` int(1) NOT NULL default '0',
+  `procountperpage` int(2) NOT NULL default '0',
+  `maxcolsperpage` int(2) NOT NULL default '0',
+  `aboutustext` text NOT NULL,
+  `shipdeltext` text NOT NULL
+) TYPE=MyISAM;
+
+-- 
+-- Dumping data for table `config`
+-- 
+

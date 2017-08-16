@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="true" default-lazy="false">
+
+<class 
+    name="roseindia.dao.hibernate.User" 
+    table="user"
+>
+
+    <id
+        name="id"
+        type="java.lang.Integer"
+        column="id"
+    >
+        <generator class="increment" />
+    </id>
+
+    <property
+        name="userid"
+        type="java.lang.String"
+        column="userid"
+        not-null="true"
+        unique="true"
+        length="30"
+    />
+    <property
+        name="password"
+        type="java.lang.String"
+        column="password"
+        not-null="true"
+        length="30"
+    />
+    <property
+        name="firstname"
+        type="java.lang.String"
+        column="firstname"
+        length="30"
+    />
+    <property
+        name="lastname"
+        type="java.lang.String"
+        column="lastname"
+        length="30"
+    />
+    <property
+        name="email"
+        type="java.lang.String"
+        column="email"
+        length="30"
+    />
+    <property
+        name="country"
+        type="java.lang.String"
+        column="country"
+        length="30"
+    />
+    <property
+        name="zip"
+        type="java.lang.String"
+        column="zip"
+        length="30"
+    />
+    <property
+        name="state"
+        type="java.lang.String"
+        column="state"
+        length="30"
+    />
+    <property
+        name="city"
+        type="java.lang.String"
+        column="city"
+        length="30"
+    />
+    <property
+        name="address"
+        type="java.lang.String"
+        column="address"
+        length="30"
+    />
+    <property
+        name="phone"
+        type="java.lang.String"
+        column="phone"
+        length="30"
+    />
+    <property
+        name="fax"
+        type="java.lang.Integer"
+        column="fax"
+        length="11"
+    />
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

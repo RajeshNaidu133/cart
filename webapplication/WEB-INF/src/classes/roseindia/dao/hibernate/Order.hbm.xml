@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="true" default-lazy="false">
+
+<class 
+    name="roseindia.dao.hibernate.Order" 
+    table="orders"
+>
+
+    <id
+        name="orderid"
+        type="java.lang.Integer"
+        column="orderid"
+    >
+        <generator class="increment" />
+    </id>
+
+    <property
+        name="ordertime"
+        type="java.sql.Timestamp"
+        column="ordertime"
+        length="19"
+    />
+    <property
+        name="custfirstname"
+        type="java.lang.String"
+        column="custfirstname"
+        length="30"
+    />
+    <property
+        name="custlastname"
+        type="java.lang.String"
+        column="custlastname"
+        length="30"
+    />
+    <property
+        name="custemail"
+        type="java.lang.String"
+        column="custemail"
+        length="30"
+    />
+    <property
+        name="custcountry"
+        type="java.lang.String"
+        column="custcountry"
+        length="30"
+    />
+    <property
+        name="custzip"
+        type="java.lang.String"
+        column="custzip"
+        length="30"
+    />
+    <property
+        name="custstate"
+        type="java.lang.String"
+        column="custstate"
+        length="30"
+    />
+    <property
+        name="custcity"
+        type="java.lang.String"
+        column="custcity"
+        length="30"
+    />
+    <property
+        name="custaddress"
+        type="java.lang.String"
+        column="custaddress"
+        length="30"
+    />
+    <property
+        name="custphone"
+        type="java.lang.String"
+        column="custphone"
+        length="30"
+    />
+    <property
+        name="custfax"
+        type="java.lang.Integer"
+        column="custfax"
+        length="11"
+    />
+    
+    <property
+        name="creditCardType"
+        type="java.lang.String"
+        column="creditCardType"
+        length="30"
+    />
+    
+    <property
+        name="cardHolderName"
+        type="java.lang.String"
+        column="cardHolderName"
+        length="30"
+    />
+    
+    
+    <property
+        name="creditCardNumber"
+        type="java.lang.String"
+        column="creditCardNumber"
+        length="20"
+    />
+    
+    <property
+        name="expirationDate"
+        type="java.sql.Date"
+        column="expirationDate"        
+    />
+    
+     <property
+        name="customerNotes"
+        type="java.lang.String"
+        column="customerNotes"
+        length="255"
+    />
+    
+    <property
+        name="cvvNumber"
+        type="java.lang.Integer"
+        column="cvvNumber"
+        length="11"
+    />
+    
+    
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>
